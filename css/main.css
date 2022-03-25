@@ -72,7 +72,6 @@ body {
 }
 .header__content .header__img {
   max-height: 100%;
-  margin-left: -320px;
 }
 @media (max-width: 768px) {
   .header__content .header__img {
