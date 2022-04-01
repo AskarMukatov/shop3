@@ -5,3 +5,8 @@
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 578px) {
+  .productSlide .productSlide__img {
+    width: 100%;
+  }
+}
