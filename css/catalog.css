@@ -9,7 +9,6 @@
 @media (max-width: 768px) {
   .catalog__menu .catalog__section {
     margin: 0 16px;
-    margin-bottom: 80px;
   }
 }
 @media (max-width: 375px) {
@@ -17,7 +16,6 @@
     flex-direction: column;
     align-items: center;
     gap: 32px;
-    margin-bottom: 80px;
   }
 }
 .catalog__menu .catalog__section .catalog__arrivals {
@@ -41,10 +39,11 @@
 }
 
 .shop {
-  margin: 132px 0 180px;
+  margin: 132px auto 180px;
 }
 
 .shop__row {
+  width: auto;
   align-items: center;
   justify-content: center;
   gap: 30px;
