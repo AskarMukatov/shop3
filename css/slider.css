@@ -11,6 +11,8 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  
+  
 }
 
 /* стили для wrapper */
@@ -24,7 +26,7 @@
 .slider__items {
   display: flex;
   transition: transform 0.5s ease;
-  
+  padding-bottom: 100px;   
 }
 
 /* класс для отключения transition */

@@ -130,18 +130,18 @@ SimpleAdaptiveSlider.prototype._setActiveClass = function() {
     }
   }
   // indicators
-  var $indicators = this._$root.querySelectorAll('.' + INDICATOR_ITEM_CLASS);
-  if ($indicators.length) {
-    for (i = 0, length = $indicators.length; i < length; i++) {
-      $item = $indicators[i];
-      index = parseInt($item.dataset.slideTo);
-      if (this._currentIndex === index) {
-        $item.classList.add(INDICATOR_ITEM_CLASS_ACTIVE);
-      } else {
-        $item.classList.remove(INDICATOR_ITEM_CLASS_ACTIVE);
-      }
-    }
-  }
+  // var $indicators = this._$root.querySelectorAll('.' + INDICATOR_ITEM_CLASS);
+  // if ($indicators.length) {
+  //   for (i = 0, length = $indicators.length; i < length; i++) {
+  //     $item = $indicators[i];
+  //     index = parseInt($item.dataset.slideTo);
+  //     if (this._currentIndex === index) {
+  //       $item.classList.add(INDICATOR_ITEM_CLASS_ACTIVE);
+  //     } else {
+  //       $item.classList.remove(INDICATOR_ITEM_CLASS_ACTIVE);
+  //     }
+  //   }
+  // }
   // controls
   var $controls = this._$root.querySelectorAll(CONTROL_SELECTOR);
   if (!$controls.length) {

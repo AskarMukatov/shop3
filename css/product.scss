@@ -13,3 +13,123 @@ $mainFont: Lato, sans-serif;
         }
     }
 }
+
+.womenCollection {
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    height: 600px;
+    margin-top: -75px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    @media (max-width:375px) {
+        margin-bottom: 0;
+    }
+    &__title {
+        font-family: $mainFont;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        margin-top: 64px;
+    }
+    &__redLine {
+        width: 63px;
+        height: 3px;
+        background-color: #EF5B70;
+        margin-top: 12px;
+    }
+    &__subtitle {
+        font-family: $mainFont;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-top: 12px;
+    }
+    &__text {
+        max-width: 550px;
+        font-family: $mainFont;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+        margin-top: 48px;
+    }
+    &__price {
+        font-family: $mainFont;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+        margin-top: 32px;
+    }
+    &__line {
+        width: 640px;
+        // height: 1px;
+        border: 1px solid #EAEAEA;
+        background-color: #EF5B70;
+        margin: 64px 0;
+        @media (max-width:375px) {
+            width: 175px;
+        }
+    }
+    &__selectParm {
+        display: flex;
+        list-style-type: none;
+        gap: 23px;
+        font-family: $mainFont;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        @media (max-width:375px) {
+            font-size: 10px;
+        }
+       img {
+           margin-left: 9px;
+       }
+
+    }
+    &__btn {
+        width: 186px;
+        height: 48px;
+        border: 1px solid #FF6A6A;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding-left: 24px;
+        text-decoration: none;
+        margin-top: 48px;
+        p {
+            font-family: $mainFont;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #F26376;
+
+        }
+    }
+
+    
+}
+@media (min-width: 376px) and (max-width: 768px) {
+    .item-6 {
+        display: none;
+    }
+}
+@media (max-width:375px) {
+    .item-3 {
+        display: none;
+    }
+}
+
+.subscribe {
+    margin-top: 80px;
+    @media (max-width:375px) {
+        margin-top: 0;
+    }
+}

@@ -1,23 +1,36 @@
 .catalog__menu {
   background-color: #F8F3F4;
 }
+
 .catalog__menu .catalog__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 60px 0;
 }
+
 @media (max-width: 768px) {
   .catalog__menu .catalog__section {
     margin: 0 16px;
   }
 }
+
 @media (max-width: 375px) {
   .catalog__menu .catalog__section {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 32px;
   }
 }
+
 .catalog__menu .catalog__section .catalog__arrivals {
   font-family: Lato, sans-serif;
   font-style: normal;
@@ -26,6 +39,7 @@
   line-height: 29px;
   color: #F16D7F;
 }
+
 .catalog__menu .catalog__section .catalog__path {
   font-family: Lato, sans-serif;
   font-style: normal;
@@ -34,6 +48,7 @@
   line-height: 17px;
   color: #636363;
 }
+
 .catalog__menu .catalog__section .catalog__path span {
   color: #F16D7F;
 }
@@ -44,10 +59,15 @@
 
 .shop__row {
   width: auto;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
+
 @media (max-width: 768px) {
   .shop__row .item-3 {
     display: none;
@@ -59,9 +79,11 @@
   background: #F8F8F8;
   padding: 0;
 }
+
 .shop__item .shop__img {
   width: 100%;
 }
+
 .shop__item .shop__title {
   font-family: Lato, sans-serif;
   font-style: normal;
@@ -70,6 +92,7 @@
   line-height: 16px;
   margin: 25px 0 0 16px;
 }
+
 .shop__item .shop__text {
   font-family: Lato, sans-serif;
   font-style: normal;
@@ -79,12 +102,14 @@
   color: #5D5D5D;
   margin: 12px 28px 18px 16px;
 }
+
 .shop__item .shop__price {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
   margin: 0 0 20px 16px;
-}/*# sourceMappingURL=catalog.css.map */
+}
+/*# sourceMappingURL=catalog.css.map */
