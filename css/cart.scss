@@ -5,6 +5,10 @@ $mainFont: Lato, sans-serif;
     display: flex;
     gap: 128px;
     justify-content: space-between;
+    margin-top: 96px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
     .cart__column-1 {
         display: flex;
         flex-direction: column;
@@ -15,6 +19,13 @@ $mainFont: Lato, sans-serif;
             display: flex;
             gap: 31px;
             box-shadow: 15px 15px 10px #EAEAEA;
+            position: relative;
+            &-esc {
+                width: 18px;
+                position: absolute;
+                right: 22px;
+                top: 28px;
+            }
             .cart__item-parm {
                 font-family: $mainFont;
                 h4 {
@@ -55,6 +66,9 @@ $mainFont: Lato, sans-serif;
         }
     }
     .cart__column-2 {
+        @media (max-width: 768px) {
+            display: flex;
+        }
         .shiping__input {
             display: flex;
             flex-direction: column;

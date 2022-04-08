@@ -2,6 +2,12 @@
   display: flex;
   gap: 128px;
   justify-content: space-between;
+  margin-top: 96px;
+}
+@media (max-width: 768px) {
+  .cart {
+    flex-direction: column;
+  }
 }
 .cart .cart__column-1 {
   display: flex;
@@ -14,6 +20,13 @@
   display: flex;
   gap: 31px;
   box-shadow: 15px 15px 10px #EAEAEA;
+  position: relative;
+}
+.cart .cart__column-1 .cart__item-esc {
+  width: 18px;
+  position: absolute;
+  right: 22px;
+  top: 28px;
 }
 .cart .cart__column-1 .cart__item .cart__item-parm {
   font-family: Lato, sans-serif;
@@ -50,6 +63,11 @@
   background: #fff;
   padding: 17px 40px;
   border: 1px solid #A4A4A4;
+}
+@media (max-width: 768px) {
+  .cart .cart__column-2 {
+    display: flex;
+  }
 }
 .cart .cart__column-2 .shiping__input {
   display: flex;
