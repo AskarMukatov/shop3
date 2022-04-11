@@ -9,10 +9,21 @@ $mainFont: Lato, sans-serif;
     @media (max-width: 768px) {
         flex-direction: column;
     }
+    @media (max-width: 375px) {
+        margin-top: 39px;
+        gap: 48px;
+    }
     .cart__column-1 {
         display: flex;
         flex-direction: column;
         gap: 40px;
+        @media (max-width: 768px) {
+            justify-content: center;
+            align-items: center;
+        }
+        @media (max-width: 375px) {
+            gap: 32px;
+        }
         .cart__item {
             width: 652px;
             max-height: 306px;
@@ -20,11 +31,29 @@ $mainFont: Lato, sans-serif;
             gap: 31px;
             box-shadow: 15px 15px 10px #EAEAEA;
             position: relative;
+            @media (max-width: 768px) {
+                width: 734px;
+            }
+            @media (max-width: 375px) {
+                width: 358px;
+                max-height: 188px;
+                gap: 17px;
+            }
             &-esc {
                 width: 18px;
                 position: absolute;
                 right: 22px;
                 top: 28px;
+                @media (max-width: 375px) {
+                    width: 10px;
+                    right: 12px;
+                    top: 17px;
+                }
+            }
+            &-img {
+                @media (max-width: 375px) {
+                    max-width: 144px;
+                }  
             }
             .cart__item-parm {
                 font-family: $mainFont;
@@ -35,6 +64,11 @@ $mainFont: Lato, sans-serif;
                     line-height: 29px;
                     color: #222222;
                     margin-top: 22px;
+                    @media (max-width: 375px) {
+                        font-size: 16px;
+                        line-height: 19px;
+                        margin-top: 13px;
+                    }
 
                 }
                 ul {
@@ -48,6 +82,11 @@ $mainFont: Lato, sans-serif;
                     span {
                         color: #EF5B70;
                     }
+                    @media (max-width: 375px) {
+                        font-size: 14px;
+                        line-height: 17px;
+                        margin-top: 25px;
+                    }
                 }
             }
         }
@@ -55,26 +94,51 @@ $mainFont: Lato, sans-serif;
             max-width: 652px;
             display: flex;
             justify-content: space-between;
+            @media (max-width: 768px) {
+                gap: 48px;
+                margin-top: 22px;
+            }
+            @media (max-width: 375px) {
+                gap: 9px;
+                margin-top: 0;
+            }
             .cart__btn {
+                font-family: $mainFont;
                 font-size: 14px;
                 border-radius: 0;
                 color: #000000;
                 background: #fff;
                 padding: 17px 40px;
                 border: 1px solid #A4A4A4;
+                text-transform: uppercase;
+                @media (max-width: 375px) {
+                    font-size: 12px;
+                    line-height: 14px;
+                    padding: 9px 36px;
+                    color: #575757;
+                    text-transform: none;
+                }
             }
         }
     }
     .cart__column-2 {
         @media (max-width: 768px) {
             display: flex;
+            gap: 15px;
+            margin: 16px auto;
+        }
+        @media (max-width: 375px) {
+            flex-direction: column;
+            gap: 48px;
+            // margin: 0px auto;
+            margin-bottom: 96px;
         }
         .shiping__input {
             display: flex;
             flex-direction: column;
             width: 360px;
             h4 {
-                font-family: 'Lato';
+                font-family: $mainFont;
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 19px;
@@ -104,6 +168,14 @@ $mainFont: Lato, sans-serif;
                 font-size: 11px;
                 line-height: 13px;
                 margin-top: 23px;
+                text-transform: uppercase;
+                @media (max-width: 375px) {
+                    font-size: 11px;
+                    line-height: 13px;
+                    padding: 11px 20px;
+                    color: #575757;
+                    text-transform: none;
+                }
             }
         }
 
@@ -113,6 +185,13 @@ $mainFont: Lato, sans-serif;
             background: #F5F3F3;
             margin-top: 57px;
             position: relative;
+            @media (max-width: 768px) {
+                margin-top: 39px;
+            }
+            @media (max-width: 375px) {
+                margin-top: 0px;
+            }
+            
             
             &-sub {
                 font-family: $mainFont;

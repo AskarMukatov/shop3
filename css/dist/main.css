@@ -489,6 +489,11 @@ body {
     margin: 48px 0 140px;
   }
 }
+@media (max-width: 375px) {
+  .main .subscribe .subscribe__container .subscribe__in {
+    margin: 48px 0 110px;
+  }
+}
 .main .subscribe .subscribe__container .subscribe__in .subscribe__title {
   font-family: Lato, sans-serif;
   font-style: normal;

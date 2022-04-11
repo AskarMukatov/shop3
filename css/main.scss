@@ -465,6 +465,9 @@ body {
                 @media (max-width:768px) {
                     margin: 48px 0 140px;
                 }
+                @media (max-width:375px) {
+                    margin: 48px 0 110px;
+                }
                 .subscribe__title {
                     font-family: $mainFont;
                     font-style: normal;
