@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/product.css">
+    <title>Product</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__navS navS">    
+                <nav class="navS__menu sitewidth">
+                    <div class="navS__leftitem">
+
+                        <a href="#" class="navS__link"><img src="img/logo.svg" alt="Logo"></a>
+                        <a href="#" class="navS__link"><img src="img/search.svg" alt="Search"></a>
+
+                    </div>
+                    <div class="navS__rightitem">
+
+                        <a href="#" class="navS__link burger"><img src="img/burger.svg" alt="MunuBurger"></a> 
+                        <a href="#" class="navS__link login"><img src="img/login.svg" alt="LogIn"></a> 
+                        <a href="#" class="navS__link basket"><img src="img/basket.svg" alt="Basket"></a>
+
+                    </div>
+                </nav>
+            </div>
+            <div class="catalog__menu">
+                <div class="catalog__section sitewidth">
+                    <div class="catalog__arrivals">REGISTRATION</div>    
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="registration sitewidth">
+                <div class="reg-input">
+                    <h4 class="reg-input__title">Your Name</h4>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <div class="radio-buttons">
+                        <input type="radio" class="radio-btn" id="genderRadio1" name="gender-radio" value="male">
+                        <label for="genderRadio1">Male</label>
+                        <input type="radio" class="radio-btn" id="genderRadio2" name="gender-radio" value="female">
+                        <label for="genderRadio2">Female</label>
+                        <input type="radio" class="radio-btn other" id="genderRadio3" name="gender-radio" value="other">
+                        <label for="genderRadio3" class="other">Other</label>
+                    </div>
+                    <h4 class="reg-input__title">Login details</h4>
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <p class="reg-text">
+                        Please use 8 or more characters, with at least 1 number and a 
+                        mixture of uppercase and lowercase letters
+                    </p>
+                    <button class="reg-btn">JOIN NOW <img src="/img/arrow.svg" alt="#"></button>
+                </div>
+                <div class="loyalty"> 
+                    <h3 class="loyalty__title">LOYALTY HAS ITS PERKS</h3>
+                    <p class="loyalty__text">
+                        Get in on the loyalty program where you can earn points and unlock serious perks.
+                         Starting with these as soon as you join:
+                    </p>
+                    <ul class="loyalty__list">
+                        <li class="loyalty__list-item">15% off welcome offer</li>
+                        <li class="loyalty__list-item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="loyalty__list-item">$10 off a purchase on your birthday</li>
+                        <li class="loyalty__list-item">Early access to products</li>
+                        <li class="loyalty__list-item">Exclusive offers & rewards</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subscribe">
+                <div class="subscribe__container sitewidth">
+                    <div class="subscribe__item">
+                        <img src="img/Intersect.png" alt="#" class="subscribe__img">
+                        <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque<br> viverra nunc mi, a pulvinar purus<br> condimentum“</p>
+                    </div>
+                    <div class="subscribe__in">
+                        <h2 class="subscribe__title">SUBSCRIBE</h2>
+                        <h4 class="subscribe__subtitle">FOR OUR NEWLETTER AND PROMOTION</h4>
+                        <div class="emailto">
+                            <input type="email" value="Enter Your Email">
+                            <button class="btn" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>   
+        <footer class="footer">
+            <div class="footer__items sitewidth">
+                <div class="copyright">© 2021  Brand  All Rights Reserved.</div>
+                <div class="social">
+                    <a href="" class="socicon"><img src="img/facebook.svg" alt=""></a>
+                    <a href="" class="socicon"><img src="img/instagram.svg" alt=""></a>
+                    <a href="" class="socicon"><img src="img/pinterest.svg" alt=""></a>
+                    <a href="" class="socicon"><img src="img/twitter.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script defer src="/js/slider.js"></script>
+</body>
+</html>
