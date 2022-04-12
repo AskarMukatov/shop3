@@ -1,0 +1,131 @@
+.registration {
+  display: flex;
+  gap: 128px;
+  margin-top: 64px 0 96px;
+}
+@media (max-width: 768px) {
+  .registration {
+    margin: 40px 16px 96px;
+    gap: 22px;
+  }
+}
+@media (max-width: 375px) {
+  .registration {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.registration .reg-input {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+.registration .reg-input__title {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.registration .reg-input input {
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 13px 0 16px 17px;
+}
+.registration .reg-input .radio-buttons {
+  display: flex;
+  gap: 20px;
+  margin: 32px 0;
+}
+@media (min-width: 1140px) {
+  .registration .reg-input .radio-buttons .other {
+    display: none;
+  }
+}
+.registration .reg-input .radio-buttons input {
+  margin-top: 0px;
+}
+.registration .reg-input .radio-buttons label {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin-left: -10px;
+}
+.registration .reg-input .reg-text {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+}
+.registration .reg-input .reg-btn {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 16px 0 17px;
+  background-color: #F16D7F;
+  width: 176px;
+  border: none;
+  margin-top: 39px;
+  left: 0;
+}
+.registration .reg-input .reg-btn img {
+  margin-left: 20px;
+}
+.registration .loyalty {
+  max-width: 652px;
+}
+.registration .loyalty__title {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .registration .loyalty__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.registration .loyalty__text {
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin: 21px 0;
+}
+@media (max-width: 768px) {
+  .registration .loyalty__text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.registration .loyalty__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .registration .loyalty__list {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.registration .loyalty__list-item::before {
+  content: url(/img/check.svg);
+  margin-right: 22px;
+}
